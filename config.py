@@ -5,21 +5,21 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7400218321:AAEszmFIC9rmUqxpLJAI1u-Qz7U9HZZ7ajw")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 API_ID = int(os.environ.get("API_ID", "17822592")
 API_HASH = os.environ.get("API_HASH", "a20b3dbbe07ed695563b4609a3e62012")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "7003079691"))
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://royalsrikanth140:DgDBkZdr8IEueHsj@cluster0.788gy1y.mongodb.net/?retryWrites=true&w=majority")
+OWNER_ID = int(os.environ.get("OWNER_ID", "6169288210"))
+DB_URL = os.environ.get("DB_URL", "")
 DB_NAME = os.environ.get("DB_NAME", "royalsrikanth140")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001937695139"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002075397287"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002205938557"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001534150170"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1800")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -28,7 +28,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[578811855]
+    ADMINS=[6169288210]
     for x in (os.environ.get("ADMINS", "578811855").split()):
         ADMINS.append(int(x))
 except ValueError:
@@ -44,7 +44,7 @@ except ValueError:
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 DISABLE_CHANNEL_BUTTON = True if os.environ.get('DISABLE_CHANNEL_BUTTON', "True") == "True" else False
 
